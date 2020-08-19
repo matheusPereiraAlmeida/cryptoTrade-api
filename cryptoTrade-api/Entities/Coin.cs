@@ -51,6 +51,6 @@ namespace cryptoTrade_api.Entities
         public long Tsupply { get; set; }
 
         [JsonProperty("msupply")]
-        public long Msupply { get; set; }
+        public long? Msupply { get; set; }
     }
 }
