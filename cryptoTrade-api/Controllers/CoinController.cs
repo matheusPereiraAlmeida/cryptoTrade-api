@@ -17,7 +17,7 @@ namespace cryptoTrade_api.Controllers
 
         // GET api/coin/5
         [HttpGet("{id}")]
-        public ActionResult<int> Get(int id)
+        public ActionResult<string> Get(int id)
         {
             return coinService.RetrieveCurrentCoinValueInUSD(id);
         }
@@ -28,7 +28,6 @@ namespace cryptoTrade_api.Controllers
         {          
             return coinService.RetrieveCurrentCoinValueInUSDMultipliedByQuantity(id, quantity);
         }
-
-        //get valor multiplicado do get
+       
     }
 }

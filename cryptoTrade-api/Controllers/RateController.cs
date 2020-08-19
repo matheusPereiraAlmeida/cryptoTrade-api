@@ -13,7 +13,7 @@ namespace cryptoTrade_api.Controllers
     {
         RateService rateService = new RateService();
 
-        // GET api/rate/5
+        // GET rate/90/BTC/ETH/1
         [HttpGet("{id}/{cointype1}/{cointype2}/{orderby:int?}")]
         public ActionResult<string> Get(int id, string cointype1, string cointype2, int orderby)
         {           
